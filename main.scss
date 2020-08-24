@@ -1,17 +1,77 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 };
 
 body{
     width: 320px;
     height: 480px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    place-items:center;
+    background: #333;
 
     h1{
         font-size: medium;
         text-align: center;
     }
     .container{
-        background-color: #1c1b29;
+        div{
+            display:grid;
+            place-items:center;
+            position:relative;
+            margin-top: 15px;
+          label{
+            width:70px;
+            height:70px;
+            display:grid;
+            place-items:center;
+            border-radius:50%;
+            background:#222;
+            box-shadow:0 2px 10px #000;
+          }
+          
+          
+          input{
+          
+            //position:absolute;
+            width:0px;
+            height:0px;
+            display:none;
+          }
+          
+          #icon{
+            font-size:40px;
+            //margin-top:10px;
+            position:absolute;
+            pointer-events:none;
+            transition:.5s;
+          }
+          
+          input[type="checkbox"]:checked + i{
+            color: #0ff;
+            text-shadow: 0 0 15px #0ff;
+          }
+          
+          input[type="checkbox"]:checked + i:after{
+            opacity:1;
+          }
+          
+          
+          i:after{
+            content:"";
+            position:absolute;
+            border-radius:50%;
+            width:70px;
+            height:70px;
+            transform: translate(-50px,-15px);
+            box-shadow: 0 0 10px #0ff,0 0 20px #0ff,0 0 20px #0ff;
+            opacity: 0;
+            transition:.5s;
+            z-index:-1;
+          }
+        }
     }
 }
