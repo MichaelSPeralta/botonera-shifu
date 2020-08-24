@@ -15,16 +15,37 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  place-items: center;
   background: #333;
 }
 
 body h1 {
   font-size: medium;
   text-align: center;
+  color: #fff;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .espacio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
 }
 
 body .container div {
@@ -32,12 +53,12 @@ body .container div {
   display: grid;
   place-items: center;
   position: relative;
-  margin-top: 15px;
+  margin: 10px 50px 0 10px;
 }
 
 body .container div label {
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -48,13 +69,14 @@ body .container div label {
 }
 
 body .container div input {
+  position: absolute;
   width: 0px;
   height: 0px;
   display: none;
 }
 
 body .container div #icon {
-  font-size: 40px;
+  font-size: 10px;
   position: absolute;
   pointer-events: none;
   -webkit-transition: .5s;
@@ -74,10 +96,10 @@ body .container div i:after {
   content: "";
   position: absolute;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  -webkit-transform: translate(-50px, -15px);
-          transform: translate(-50px, -15px);
+  width: 30px;
+  height: 30px;
+  -webkit-transform: translate(-18px, -10px);
+          transform: translate(-18px, -10px);
   -webkit-box-shadow: 0 0 10px #0ff,0 0 20px #0ff,0 0 20px #0ff;
           box-shadow: 0 0 10px #0ff,0 0 20px #0ff,0 0 20px #0ff;
   opacity: 0;

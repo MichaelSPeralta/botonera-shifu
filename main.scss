@@ -9,23 +9,31 @@ body{
     height: 480px;
     display:flex;
     flex-direction: column;
-    align-items: center;
-    place-items:center;
     background: #333;
 
     h1{
         font-size: medium;
         text-align: center;
+        color: #fff
     }
     .container{
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+
+      .espacio{
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+      }
         div{
             display:grid;
             place-items:center;
             position:relative;
-            margin-top: 15px;
+            margin: 10px 50px 0 10px;
           label{
-            width:70px;
-            height:70px;
+            width:30px;
+            height:30px;
             display:grid;
             place-items:center;
             border-radius:50%;
@@ -35,15 +43,14 @@ body{
           
           
           input{
-          
-            //position:absolute;
+            position:absolute;
             width:0px;
             height:0px;
             display:none;
           }
           
           #icon{
-            font-size:40px;
+            font-size:10px;
             //margin-top:10px;
             position:absolute;
             pointer-events:none;
@@ -64,9 +71,9 @@ body{
             content:"";
             position:absolute;
             border-radius:50%;
-            width:70px;
-            height:70px;
-            transform: translate(-50px,-15px);
+            width:30px;
+            height:30px;
+            transform: translate(-18px,-10px);
             box-shadow: 0 0 10px #0ff,0 0 20px #0ff,0 0 20px #0ff;
             opacity: 0;
             transition:.5s;
