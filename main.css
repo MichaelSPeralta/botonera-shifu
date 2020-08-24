@@ -16,25 +16,24 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #333;
+  margin: 10px;
 }
 
 body h1 {
   font-size: medium;
   text-align: center;
-  color: #fff;
+  color: #999999;
 }
 
 body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 20px 0;
 }
 
 body .container .espacio {
@@ -45,20 +44,30 @@ body .container .espacio {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1px 50px;
 }
 
-body .container div {
+body .container .espacio p {
+  color: #999999;
+}
+
+body .container .espacio .button {
   display: -ms-grid;
   display: grid;
   place-items: center;
   position: relative;
-  margin: 10px 50px 0 10px;
+  margin: 10px 0 0 10px;
 }
 
-body .container div label {
-  width: 30px;
-  height: 30px;
+body .container .espacio .button label {
+  width: 40px;
+  height: 40px;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -68,14 +77,14 @@ body .container div label {
           box-shadow: 0 2px 10px #000;
 }
 
-body .container div input {
+body .container .espacio .button input {
   position: absolute;
   width: 0px;
   height: 0px;
   display: none;
 }
 
-body .container div #icon {
+body .container .espacio .button #icon {
   font-size: 10px;
   position: absolute;
   pointer-events: none;
@@ -83,23 +92,23 @@ body .container div #icon {
   transition: .5s;
 }
 
-body .container div input[type="checkbox"]:checked + i {
+body .container .espacio .button input[type="checkbox"]:checked + i {
   color: #0ff;
   text-shadow: 0 0 15px #0ff;
 }
 
-body .container div input[type="checkbox"]:checked + i:after {
+body .container .espacio .button input[type="checkbox"]:checked + i:after {
   opacity: 1;
 }
 
-body .container div i:after {
+body .container .espacio .button i:after {
   content: "";
   position: absolute;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  -webkit-transform: translate(-18px, -10px);
-          transform: translate(-18px, -10px);
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translate(-24px, -15px);
+          transform: translate(-24px, -15px);
   -webkit-box-shadow: 0 0 10px #0ff,0 0 20px #0ff,0 0 20px #0ff;
           box-shadow: 0 0 10px #0ff,0 0 20px #0ff,0 0 20px #0ff;
   opacity: 0;
