@@ -60,9 +60,15 @@ body .container .espacio p {
 body .container .espacio .btn button {
   width: 40px;
   height: 40px;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   background: #222;
   -webkit-box-shadow: 0 2px 10px #000;
@@ -74,27 +80,34 @@ body .container .espacio .btn #icon {
   font-size: 10px;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: #000;
 }
 
 body .container .espacio .btn-active {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body .container .espacio .btn-active button {
   width: 40px;
   height: 40px;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   background: #222;
-  -webkit-box-shadow: 0 0 10px #0ff,0 0 20px #0ff,0 0 20px #0ff;
-          box-shadow: 0 0 10px #0ff,0 0 20px #0ff,0 0 20px #0ff;
+  -webkit-box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 20px #0ff;
+          box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 20px #0ff;
   border-color: #333;
+  color: #333;
 }
 
 body .container .espacio .btn-active #icon {

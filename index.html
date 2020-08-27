@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,73 +9,75 @@
     <script src="./script.js"></script>
     <title>Home Automation</title>
 </head>
+
 <body>
     <h1>Home Automation</h1>
     <div class="container">
-        <div class="comedor espacio">
+        <div class="espacio">
             <p>Comedor</p>
-            <div class="btn-active">
-                <button>
+            <div class="btn" id="comedor">
+                <button onclick="fComedor()">
                     <i class="fa fa-power-off" id="icon"></i>
                 </button>
             </div>
         </div>
-        <div class="bano espacio">
+        <div class="espacio">
             <p>Baño</p>
-            <div class="btn-active">
-            <button>
-                <i class="fa fa-power-off" id="icon"></i>
-            </button>
+            <div class="btn" id="bano">
+                <button onclick="fBano()">
+                    <i class="fa fa-power-off" id="icon"></i>
+                </button>
+            </div>
         </div>
-        </div>
-        <div class="sala espacio">
+        <div class="espacio">
             <p>Sala</p>
-            <div class="btn-active">
-                <button>
+            <div class="btn" id="sala">
+                <button onclick="fSala()">
                     <i class="fa fa-power-off" id="icon"></i>
                 </button>
             </div>
         </div>
-        <div class="cocina espacio">
+        <div class="espacio">
             <p>Cocina</p>
-            <div class="btn-active">
-                <button>
+            <div class="btn" id="cocina">
+                <button onclick="fCocina()">
                     <i class="fa fa-power-off" id="icon"></i>
                 </button>
             </div>
         </div>
-        <div class="habitacion espacio">
+        <div class="espacio">
             <p>Habitacion</p>
-            <div class="btn-active">
-                <button>
+            <div class="btn" id="habitacion">
+                <button onclick="fHabitacion()">
                     <i class="fa fa-power-off" id="icon"></i>
                 </button>
             </div>
         </div>
-        <div class="oficina espacio">
+        <div class="espacio">
             <p>Oficina</p>
-            <div class="btn-active">
-                <button>
+            <div class="btn" id="oficina">
+                <button onclick="fOficina()">
                     <i class="fa fa-power-off" id="icon"></i>
                 </button>
             </div>
         </div>
-        <div class="vani espacio">
+        <div class="espacio">
             <p>Vani MakeUp</p>
-            <div class="btn-active">
-                <button>
+            <div class="btn" id="vani">
+                <button onclick="fVani()">
                     <i class="fa fa-power-off" id="icon"></i>
                 </button>
             </div>
         </div>
-        <div class="vestidor espacio">
+        <div class="espacio">
             <p>Vestidor</p>
             <div class="btn" id="vestidor">
-                <button>
+                <button onclick="fVestidor()">
                     <i class="fa fa-power-off" id="icon"></i>
                 </button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
