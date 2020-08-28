@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <script src="./script.js"></script>
-    <title>Home Automation</title>
+    <title>RPI Lights Automation</title>
 </head>
 
 <body>
-    <h1>Home Automation</h1>
+    <h1>RPI Lights Automation</h1>
     <div class="container">
         <div class="espacio">
-            <p>Comedor</p>
+            <p id="pcomedor">Comedor</p>
             <div class="btn" id="comedor">
                 <button onclick="fComedor()">
                     <i class="fa fa-power-off" id="icon"></i>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="espacio">
-            <p>Baño</p>
+            <p id="pbano">Baño</p>
             <div class="btn" id="bano">
                 <button onclick="fBano()">
                     <i class="fa fa-power-off" id="icon"></i>
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="espacio">
-            <p class=p-active>Sala</p>
+            <p id="psala">Sala</p>
             <div class="btn" id="sala">
                 <button onclick="fSala()">
                     <i class="fa fa-power-off" id="icon"></i>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="espacio">
-            <p>Cocina</p>
+            <p id="pcocina">Cocina</p>
             <div class="btn" id="cocina">
                 <button onclick="fCocina()">
                     <i class="fa fa-power-off" id="icon"></i>
@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="espacio">
-            <p class=p-active>Habitacion</p>
+            <p id="phabitacion">Habitacion</p>
             <div class="btn" id="habitacion">
                 <button onclick="fHabitacion()">
                     <i class="fa fa-power-off" id="icon"></i>
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="espacio">
-            <p>Oficina</p>
+            <p id="poficina">Oficina</p>
             <div class="btn" id="oficina">
                 <button onclick="fOficina()">
                     <i class="fa fa-power-off" id="icon"></i>
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="espacio">
-            <p>Vani MakeUp</p>
+            <p id=pvani>Vani MakeUp</p>
             <div class="btn" id="vani">
                 <button onclick="fVani()">
                     <i class="fa fa-power-off" id="icon"></i>
@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="espacio">
-            <p>Vestidor</p>
+            <p id="pvestidor">Vestidor</p>
             <div class="btn" id="vestidor">
                 <button onclick="fVestidor()">
                     <i class="fa fa-power-off" id="icon"></i>
