@@ -116,4 +116,8 @@ body .container .espacio .btn-active #icon {
   pointer-events: none;
   color: #0ff;
 }
+
+body .container .espacio button:focus {
+  outline: none;
+}
 /*# sourceMappingURL=main.css.map */
