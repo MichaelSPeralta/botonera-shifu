@@ -17,6 +17,8 @@ body {
           flex-direction: column;
   background: #333;
   margin: 10px;
+  font-family: "Do Hyeon", sans-serif;
+  letter-spacing: 2px;
 }
 
 body h1 {
@@ -50,11 +52,18 @@ body .container .espacio {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1px 50px;
+  margin: 10px 50px 0px 50px;
 }
 
 body .container .espacio p {
   color: #999999;
+}
+
+body .container .espacio .p-active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 20px #0ff;
 }
 
 body .container .espacio .btn button {
@@ -82,7 +91,7 @@ body .container .espacio .btn #icon {
   pointer-events: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #000;
+  color: rgba(212, 36, 36, 0.507);
 }
 
 body .container .espacio .btn-active {

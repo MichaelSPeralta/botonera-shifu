@@ -11,6 +11,9 @@ body {
   flex-direction: column;
   background: #333;
   margin: 10px;
+  font-family: "Do Hyeon", sans-serif;
+  // text-transform: uppercase;
+  letter-spacing: 2px;
   h1 {
     font-size: medium;
     text-align: center;
@@ -26,11 +29,16 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      margin: 1px 50px;
+      margin: 10px 50px 0px 50px;
       p {
         color: rgb(153, 153, 153);
       }
 
+      .p-active {
+        transition: 0.5s;
+        color: #0ff;
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 20px #0ff;
+      }
       .btn {
         button {
           width: 40px;
@@ -50,7 +58,7 @@ body {
           position: absolute;
           pointer-events: none;
           transition: 0.5s;
-          color: #000;
+          color: rgba(212, 36, 36, 0.507);
         }
       }
 
